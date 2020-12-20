@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="9dp"
+        android:text="Test number : "
+        android:textColor="#f9f9fd"
+        android:textSize="20dp"
+        android:id="@+id/testnumbertxt_test_marks"/>
+
+    <EditText
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_no_edit_test"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/testnumbertxt_test_marks"
+        android:hint="test number"
+        android:inputType="number"
+        android:textColor="#f9f3f9"
+        android:textColorHint="#f9f3f9" />
+
+    <ListView
+        android:id="@+id/test_student_listview"
+        android:layout_width="match_parent"
+        android:layout_height="388dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginRight="0dp"
+        android:divider="#f5fcf5"
+        android:dividerHeight="2sp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnMark_add_test_marks"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#19ba07"
+        android:text="Add mark"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
